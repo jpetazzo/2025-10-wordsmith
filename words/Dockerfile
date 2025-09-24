@@ -19,3 +19,5 @@ WORKDIR target
 CMD java -Xmx8m -Xms8m -jar words.jar
 
 # (En se plaçant dans le répertoire où se trouve words.jar.)
+
+# Coucou

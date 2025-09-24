@@ -4,8 +4,8 @@
 
 FROM ubuntu
 # Sur une distribution Debian/Ubuntu, on peut installer Java et maven comme suit :
-
-RUN apt-get install maven
+RUN apt-get update
+RUN apt-get install maven -y
 
 # Voici la commande qui permet d'invoquer maven pour compiler le programme :
 COPY . .

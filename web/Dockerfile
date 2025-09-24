@@ -10,5 +10,5 @@ RUN go build dispatcher.go
 
 # Cela produit un exécutable appelé dispatcher, qui se lance comme suit :
 
-CMD ./dispatcher
+CMD ["./dispatcher"]
 # Listening on port 80

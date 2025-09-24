@@ -16,7 +16,8 @@ RUN mvn verify
 
 #Le serveur se lance ensuite avec la commande suivante :
 WORKDIR target
-CMD java -Xmx8m -Xms8m -jar words.jar
+#CMD java -Xmx8m -Xms8m -jar words.jar
+CMD ["java", "-Xmx8m", "-Xms8m", "-jar", "words.jar"]
 
 # (En se plaçant dans le répertoire où se trouve words.jar.)
 

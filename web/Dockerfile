@@ -8,6 +8,8 @@ FROM golang
 COPY dispatcher.go .
 RUN go build dispatcher.go
 
+COPY static static
+
 # Cela produit un exécutable appelé dispatcher, qui se lance comme suit :
 
 CMD ["./dispatcher"]

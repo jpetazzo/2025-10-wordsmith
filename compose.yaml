@@ -1,0 +1,9 @@
+services:
+  web:
+    build: web
+    ports:
+    - 1234:80
+  words:
+    build: words
+  db:
+    build: db
